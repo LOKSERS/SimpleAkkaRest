@@ -6,7 +6,11 @@ import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 
 import scala.concurrent.Future
 
-package object routes extends Directives with DefDBConfig with DefConfig with DefJsonFormat {
+package object routes extends
+  Directives with
+  DefDBConfig with
+  DefConfig with
+  DefJsonFormat {
 
   lazy val defRoute: Route = {
     path("") {
