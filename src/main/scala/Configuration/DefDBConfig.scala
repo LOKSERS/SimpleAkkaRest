@@ -1,10 +1,10 @@
-package ConfigSettrings
+package Configuration
 
 import cats.effect.IO
 import doobie.Transactor
 import doobie.util.transactor.Transactor.Aux
 
-trait DefDBLayer {
+trait DefDBConfig {
 
   implicit lazy val connetion: Aux[IO, Unit] = Transactor.fromDriverManager[IO](
     "org.postgresql.Driver", // driver classname

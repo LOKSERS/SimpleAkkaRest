@@ -15,3 +15,10 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion,
   "org.tpolecat" %% "doobie-postgres" % "1.0.0-RC2"
 )
+
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % AkkaVersion
+// https://mvnrepository.com/artifact/com.typesafe.play/play-json
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.0-RC6"
+// https://mvnrepository.com/artifact/de.heikoseeberger/akka-http-play-json
+libraryDependencies += "de.heikoseeberger" %% "akka-http-play-json" % "1.40.0-RC1"
+
